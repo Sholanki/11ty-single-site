@@ -1,0 +1,19 @@
+{% set currentUrl %}{{ page.url }}{% endset %}
+
+<nav>
+  <ul role="list">
+    <li>
+      <a {% if currentUrl === '/' %}aria-current="page"{% endif %} href="/">Home</a>
+    </li>
+
+    {% for post in collections.posts %}
+    <li>
+      <a
+        {% if currentUrl === page.url %}aria-current="page"{% endif %}
+        href="{{ post.url }}">
+          {{ post.data.title }}
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+</nav>

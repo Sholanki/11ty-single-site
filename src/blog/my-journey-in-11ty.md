@@ -3,13 +3,14 @@ title: My Journey in 11ty
 ---
 
 ### 11ty Journey so far
-So, what I am writing in this post is to make use of all the things that I have learned so far in 11ty and make use of markdown language that I have come to discover so far. So, first things first, what did I use and learn so far:
-- There is something called unordered list of items
-- I am using it right now by using the syntax `-First item`.
-- With one site at disposal, I can learn and tweak plenty of things at my disposal and have fun
-- It is fun if I know why, it is still fun if I do not know why. As long as I am curious and want to do something, I am good
+#### So, what I am writing in this post is to make use of all the things that I have learned so far in 11ty and make use of markdown language that I have come to discover so far. So, first things first, what did I use and learn so far:
+
+#### - There is something called unordered list of items
+#### - I am using it right now by using the syntax `-First item`.
+#### - With one site at disposal, I can learn and tweak plenty of things at my disposal and have fun
+#### - It is fun if I know why, it is still fun if I do not know why. As long as I am curious and want to do something, I am good
   
-  Ok, it is time to list down what I have learnt and still learning in 11ty so far in an orderly way :)
+  #### Ok, it is time to list down what I have learnt and still learning in 11ty so far in an orderly way :)
   1. `npm init -y` and `npm install @11ty/eleventy` are the most initial scripts that are to be run in the beginning to install package.json and to install eleventy
   2. Next, comes modification of scripts in package.json to serve and build eleventy
   3. After that comes inclusion of .eleventy.js to specify my input and output directories of my project folder and to actually create the  
@@ -22,7 +23,7 @@ So, what I am writing in this post is to make use of all the things that I have 
   9. Now comes pagination. Phew! In pagination, we describe size of items like 3 or any other random number. Now, all the posts are distributed as per that size within that pagination size. So, if there are 10 posts, there will be list of `10 div 3 = 3 and 1 remaining post` i.e. 4 pages of 3 posts each excluding the last one which has 1 post.
   10. Next are functions which are conveniently put inside `partials/*.njk` which can be included inside other njk files using the code `include filename.njk` to include it.
 
-Well, that's all to it and a whole load of imagination. Here are the list of reference websites that I found useful while making website and having fun
+#### Well, that's all to it and a whole load of imagination. Here are the list of reference websites that I found useful while making website and having fun
 1. For markdown, I found this nifty [site](https://www.markdownguide.org/cheat-sheet/).
 2. For 11ty, I foun these fabulous sites which were suggested to me bymy friends. They are:
    - [11ty.rocks](https://11ty.rocks/)
@@ -31,4 +32,4 @@ Well, that's all to it and a whole load of imagination. Here are the list of ref
    - [Piccalil course](https://piccalil.li/course/learn-eleventy-from-scratch/)
    - [Nunjucks templating](https://mozilla.github.io/nunjucks/templating.html)
 
-A big thank you to the online creators and their courses, my peers who have been in this journey and who have helped me put up this website. A big **THANK YOU** to all. Without your collaboration and your shared efforts online, this would not have been possible.
+#### A big thank you to the online creators and their courses, my peers who have been in this journey and who have helped me put up this website. A big **THANK YOU** to all. Without your collaboration and your shared efforts online, this would not have been possible.
