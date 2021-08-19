@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy"
+    "js-build": "node-sass css/styles.scss -o css",
+    "watch:eleventy": "npx @11ty/eleventy --serve",
+    "watch:sass": "npx sass sass:_site/css --watch",
+    "build": "npx @11ty/eleventy",
+    "start": "npm run watch:eleventy & npm run watch:sass"
   },
   "repository": {
     "type": "git",
@@ -19,7 +22,11 @@
   },
   "homepage": "https://github.com/Sholanki/11ty-single-site#readme",
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "clean-css": "^5.1.5",
+    "node-sass": "^6.0.1",
+    "node-sass-promise": "^1.0.0",
+    "sass": "^1.38.0"
   },
   "devDependencies": {
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2"

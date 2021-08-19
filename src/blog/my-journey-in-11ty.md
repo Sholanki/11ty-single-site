@@ -31,5 +31,6 @@ title: My Journey in 11ty
    - [Creating 11ty site from scratch](https://11ty.rocks/posts/create-your-first-basic-11ty-website/)
    - [Piccalil course](https://piccalil.li/course/learn-eleventy-from-scratch/)
    - [Nunjucks templating](https://mozilla.github.io/nunjucks/templating.html)
+  
 
 #### A big thank you to the online creators and their courses, my peers who have been in this journey and who have helped me put up this website. A big **THANK YOU** to all. Without your collaboration and your shared efforts online, this would not have been possible.
