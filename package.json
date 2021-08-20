@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "npx ava",
+    "sample": "cd sample && npx @11ty/eleventy --config=config-sample.js",
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "watch:sass": "npx sass sass:_site/css --watch",
     "build": "npx @11ty/eleventy",
@@ -29,6 +31,7 @@
     "sass": "^1.38.0"
   },
   "devDependencies": {
+    "@11ty/eleventy-plugin-rss": "^1.1.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2"
   }
 }

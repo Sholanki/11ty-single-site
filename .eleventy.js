@@ -1,8 +1,17 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(syntaxHighlight);
+    eleventyConfig.addPlugin(pluginRss);
+    eleventyConfig.addPlugin(pluginRss, {
+      posthtmlRenderOptions: {
+        closingSingleTag: "default" // opt-out of <img/>-style XHTML single tags
+      }
+    });
+  
+  eleventyConfig.addLiquidFilter("dateToRfc3339", pluginRss.dateToRfc3339);
     eleventyConfig.addPlugin(pluginNavigation);
     eleventyConfig.addPassthroughCopy("./src/css");
     eleventyConfig.setBrowserSyncConfig({

@@ -11,7 +11,7 @@ tags:
 
 - ~~Toggle button for dark mode and light mode~~
 - ~~A separate list for posts~~
-- RSS feed
+- ~~RSS feed~~
 - Post card in 11ty
 - Featured post in 11ty
   
