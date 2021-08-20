@@ -1,0 +1,25 @@
+---
+eleventyNavigation:
+  key: Posts
+title: Posts
+layout: postmain.njk
+---
+
+<!DOCTYPE html>
+
+
+{% block content %}
+<div class="content">
+  {% set showYear = false %}
+  {% set postslist = collections.posts %}
+    {% for post in collections.posts %}
+    <li>
+      <a
+        {% if currentUrl === page.url %}aria-current="page"{% endif %}
+        href="{{ post.url }}">
+          {{ post.data.title }}
+      </a>
+    </li>
+    {%- endfor %}
+</div>
+{% endblock %}

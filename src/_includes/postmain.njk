@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{ title }}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="/">
+        <link rel="stylesheet" href="/css/styles.css" />
+    </head>
+    <body>
+        {% include "color-switcher.html" %}
+        {% include "nav.njk" %}
+        <header>
+            <h1>{{ title }}</h1>
+        </header>
+        {% if canonical %}
+            {% set tagUrl %}/{{ tag }}/{% endset %}
+            <link rel="canonical" href="{{ tagUrl | url }}" />
+        {% endif %}
+        {% block header %}
+        {% endblock %}
+        <main id="recentArticles" {% if templateClass %} class="{{ templateClass }}"{% endif %}>
+            {% block content %}
+                {{ content | safe }}
+            {% endblock %}
+        </main>
+        <footer><hr>
+            <p>
+            <a href="https://twitter.com/BiswasSholanki" target="_blank" class="footer-link"> twitter</a> | <a href="https://www.facebook.com/sholankibiswas" target="_blank" class="footer-link"> facebook</a> | <a href="https://hashnode.com/@ShoBiz" target="_blank" class="footer-link"> hashnode</a>
+            </p>
+            <b class="copyright">© ShoBiz 2021</b>
+
+        </footer>
+    </body>
+</html>

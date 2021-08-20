@@ -1,5 +1,10 @@
 ---
-title: My Journey in 11ty
+date: 2020-09-09T11:18:34.000-07:00
+title: 'My Journey in 11ty'
+description: Journey in 11ty and what I have learned in 11ty so far
+published: true
+tags:
+  - 11tyjourney
 ---
 
 ### 11ty Journey so far

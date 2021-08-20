@@ -1,5 +1,10 @@
 ---
-title: Entering The Dark Mode
+date: 2020-09-09T11:18:34.000-07:00
+title: 'Entering The Dark Mode'
+description: Toggling from light theme to dark theme
+published: true
+tags:
+  - Darkmode
 ---
 
 

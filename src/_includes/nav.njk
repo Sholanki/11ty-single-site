@@ -5,16 +5,11 @@
     <li>
       <a {% if currentUrl === '/' %}aria-current="page"{% endif %} href="/">Home</a>
     </li>
-
-    {% for post in collections.posts %}
-    <li>
-      <a
-        {% if currentUrl === page.url %}aria-current="page"{% endif %}
-        href="{{ post.url }}">
-          {{ post.data.title }}
-      </a>
-    </li>
-    {%- endfor %}
+    
+        {%- for entry in collections.all | eleventyNavigation %}
+          <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+        {%- endfor %}
+      
     <li><a id="color-switcher" onclick="toggleTheme()">🌙</a></li>
   </ul>
 </nav>

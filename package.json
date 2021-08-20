@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Sholanki/11ty-single-site#readme",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-navigation": "^0.3.2",
     "clean-css": "^5.1.5",
     "node-sass": "^6.0.1",
     "node-sass-promise": "^1.0.0",
