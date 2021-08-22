@@ -10,6 +10,7 @@ $middle-blue-green: #83c5beff;
 $alice-blue: #edf6f9ff;
 $unbleached-silk: #ffddd2ff;
 $dark-salmon: #e29578ff;
+$light-cyan: #C8E5E2;
 $border-radius: 4px;
 $color-box-background: mix($ming, white, 4%);
 $font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
@@ -92,14 +93,14 @@ a {
   color: $ming;
   &:hover {
     color: $ming !important;
-    background: $dark-salmon;
+    background: $light-cyan;
   }
   &:after {
     position: relative;
-    top: -0.5em;
+    top: -1.2em;
     font-size: 0.7em;
     content: "↗";
-    color: $dark-salmon;
+    color: $light-cyan;
   }
   &.internal-link:after,
   &.footnote:after,
@@ -109,7 +110,7 @@ a {
 }
 
 *:focus {
-  background: #e29578ff !important;
+  background: $light-cyan !important;
   color: $ming !important;
 }
 
@@ -137,7 +138,7 @@ nav {
 }
 
 code {
-  background: $unbleached-silk;
+  background: $light-cyan;
   padding: 0.1em 0.2em;
   border-radius: 4px;
 }
