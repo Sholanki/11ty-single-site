@@ -3,6 +3,7 @@ date: 2020-09-09T11:18:34.000-07:00
 layout: base.njk
 title: 'Upcoming tweaks in this site'
 description: Upcoming tweaks in website
+permalink: 
 published: true
 tags:
     - tweaks

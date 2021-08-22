@@ -3,7 +3,6 @@ date: 2020-08-21T11:18:34.000-07:00
 title: 'Tinkering with palette'
 description: Tinkering with palette of website
 published: true
-tags:
 ---
 
 So, while creating this website, I went for the usual light and dark mode - white background with black colored fonts for light mode and black background and white font color for dark mode. One of my friends suggested to check out [coolors](https://coolors.co/). It is a nice website where one can explore palettes, shades and choose themes based on color in mind. 
