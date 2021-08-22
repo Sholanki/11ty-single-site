@@ -23,6 +23,7 @@ tags:
 - Adding `About Me` section
 - Adding images and excerpt in post cards.
 - Featured post in 11ty
+- A tutorial on 11ty! This is going to be a work in progress. 
 
 
 #### *Note*: This list will be updated as more and more items are added and removed.
