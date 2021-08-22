@@ -14,7 +14,9 @@ tags:
 - ~~Toggle button for dark mode and light mode~~
 - ~~A separate list for posts~~
 - ~~RSS feed~~
-- Post card in 11ty
+- ~~Post card in 11ty~~
+- ~~Adding ReadMe in Github with one step deploy button in Netlify and Vercel~~
+- Adding `About Me` section
 - Featured post in 11ty
   
 

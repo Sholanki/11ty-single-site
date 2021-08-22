@@ -18,5 +18,7 @@ The tools and links that I found useful while making this site:
 - [Creating RSS](https://www.11ty.dev/docs/plugins/rss/)
 - [Integrating SCSS in 11ty](https://dev.to/adamkdean/simple-scss-with-11ty-kmn)
 - [11ty navigation](https://www.11ty.dev/docs/plugins/navigation/)
+- [CSS grids](https://learncssgrid.com/)
+- [Making post cards pop](https://dev.to/jonoyeong/how-to-make-your-cards-pop-10ok)
 
 *Note*: The list will be continuously updated with the links and tools that I find useful while making this site. 
