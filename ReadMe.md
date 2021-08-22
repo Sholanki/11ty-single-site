@@ -1,7 +1,7 @@
 # Intro about this website
 
 This website contains all the features that are usually used in 11ty. 
-You can see the demo site at: https://sad-shannon-2c6f9c.netlify.app/posts/
+You can see the demo site at: https://sad-shannon-2c6f9c.netlify.app/
 
 # Installing
 ```bash
