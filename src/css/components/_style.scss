@@ -3,17 +3,7 @@ $color-text: hsl(0, 0%, 20%);
 $color-subtext: hsl(0, 0%, 30%);
 $color-border: hsl(0, 0%, 85%);
 
-$violet-blue: hsl(236, 43%, 20%);
-$space-cadet: hsl(237,43%, 24%);
-$violet-blue-crayola: hsla(236, 57%, 68%, 1);
-$cornflower-blue: hsla(236, 79%, 75%, 1);
-$maximum-blue-purple: hsla(239, 100%, 81%, 1);
-$maximum-blue-purple-2: hsla(244, 100%, 83%, 1);
-$maximum-blue-purple-3: hsla(250, 100%, 84%, 1);
-$mauve: hsla(260, 97%, 85%, 1);
-$mauve-2: hsla(271, 92%, 85%, 1);
-$mauve-3: hsla(270, 91%, 86%, 1);
-$mauve-4: hsla(271, 90%, 88%, 1);
+
 
 $ming: #006d77ff;
 $middle-blue-green: #83c5beff;
@@ -235,113 +225,6 @@ code {
   }
 }
 
-$night-mode-bg: $violet-blue;
-$night-mode-pg: $space-cadet;
-$night-mode-fg: #ffffffe6;
-
-body.night-mode {
-  background-color: $night-mode-bg;
-  color: $night-mode-fg;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6, a {
-    color: $night-mode-fg;
-  }
-
-  footer{
-    color: white;
-  }
-
-  code {
-    background: $violet-blue-crayola;
-  }
-
-  .masthead,
-  .post,
-  hr {
-    border-color: $maximum-blue-purple-3
-  }
-
-  .post-card {
-    background: $night-mode-pg;
-  }
-
-  .post-card__inner {
-    background: $night-mode-pg;
-    border-radius: 5px;
-    padding: 1rem 1rem;
-    display: block;
-    color: white;
-    position: relative;
-    text-decoration: none;
-    transition: transform .07s ease-out;
-    margin-bottom: 1rem !important;
-    padding: 0 1rem 4rem 1rem;
-    height: 70px;
-  
-    @media (min-width: 768px) {
-      padding: 1.5rem 1.6rem;
-    }
-  }
- 
-   
-  .grid_container {
-    display: grid;
-    grid-row-gap: 5%;
-    grid-template-columns: 30% 30% 30%;
-    padding: 10px;
-  }
-  
-  .grid_item {
-    padding: 20px;
-  }
-
-  .post-card__title {
-    color: white;
-    text-decoration: none;
-    margin-bottom: 0.8rem;
-    word-wrap: break-word;
-  
-    &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: 10;
-      
-    }
-  }
-
-  $link-color: rgb(218, 202, 136);
-  .entry a,
-  a.read-more {
-    color: $link-color;
-  }
-
-  a:hover {
-    color: lighten($link-color, 15);
-  }
-
-  .wrapper-footer {
-    background-color: $night-mode-bg;
-  }
-
-  .highlight {
-    background-color: $violet-blue;
-    border: 1px solid $violet-blue;
-  }
-
-  nav a,
-  .site-description {
-    color: #ccc;
-  }
-}
 
 nav ul {
   list-style: none;
