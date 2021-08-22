@@ -1,9 +1,13 @@
 ---
+eleventyNavigation:
+  key: Upcoming features
+  order: 3
 date: 2020-09-09T11:18:34.000-07:00
-layout: base.njk
 title: 'Upcoming tweaks in this site'
 description: Upcoming tweaks in website
 published: true
+permalink: "/Upcoming features/"
+layout: base.njk
 tags:
     - tweaks
 ---
