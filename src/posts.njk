@@ -13,14 +13,20 @@ layout: postmain.njk
 <div class="content">
   {% set showYear = false %}
   {% set postslist = collections.posts %}
-    {% for post in collections.posts %}
-    <li>
-      <a
-        {% if currentUrl === page.url %}aria-current="page"{% endif %}
-        href="{{ post.url }}">
+  {% for post in collections.posts %}
+    <article class="post-card u-mb1" aria-label="{{ post.data.title }}">
+      <div class="post-card__inner">
+        <p class="post-card__info">
+          
+          
+            <a href="{{ post.url | url }}" class="post-card__title h4">
           {{ post.data.title }}
-      </a>
-    </li>
-    {%- endfor %}
+        </a>
+          
+        </p>
+
+      </div>
+  </article>
+  {% endfor %}
 </div>
 {% endblock %}
