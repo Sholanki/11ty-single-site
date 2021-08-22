@@ -26,6 +26,11 @@ yarn start
 
 You now have an 11ty site running on your local host. You can put your posts inside `posts` folder, you can change the Introduction page in `intro.njk` file at project directory and change the `author name`, `bio`, `link` on `feed.njk` file in project directory.
 
+# Customize
+
+You can customize by adding your own styles in `css/components/_style.scss` file. You can add other scss files in `css/components` folder and importing it in `css/styles.scss` file. 
+You can add functions and layouts under `_includes` folder
+
 # Deploying on Netlify
 
 To deploy to your Netlify account, hit the button below.
