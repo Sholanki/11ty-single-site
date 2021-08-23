@@ -20,11 +20,11 @@ body {
   box-sizing: content-box;
   font-family: $font-family;
   margin: 0 auto;
-  line-height: 1.7;
+  line-height: 1.2;
   padding: 4vh 6vw;
   overflow-x: hidden;
   color: $ming;
-  font-size: 1rem;
+  font-size: 0.7rem;
   max-width: 63em;
   background: $alice-blue;
 
@@ -196,7 +196,7 @@ code {
 
 .post-card__excerpt {
   display: block;
-  word-wrap: break-word;
+  word-wrap: normal;
 }
 
 .post-card__info {
@@ -213,11 +213,11 @@ code {
   color: $ming;
   text-decoration: none;
   margin-bottom: 0.8rem;
-  word-wrap: break-word;
+  word-wrap: normal;
 
   &:after {
     content: "";
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     bottom: 0;
