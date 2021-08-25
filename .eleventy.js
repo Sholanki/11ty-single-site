@@ -1,8 +1,48 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const Image = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addNunjucksAsyncShortcode("Image", async (src, alt) => {
+    if (!alt) {
+      throw new Error(`Missing \`alt\` on myImage from: ${src}`);
+    }
+
+    let stats = await Image(src, {
+      widths: [640, 960, 1200, 1800, 2400],
+      formats: ["jpeg", "webp", "jpg"],
+      urlPath: "/images/",
+      outputDir: "./public/images/",
+    });
+
+    let lowestSrc = stats["jpeg"][0];
+
+    const srcset = Object.keys(stats).reduce(
+      (acc, format) => ({
+        ...acc,
+        [format]: stats[format].reduce(
+          (_acc, curr) => `${_acc} ${curr.srcset} ,`,
+          ""
+        ),
+      }),
+      {}
+    );
+
+    const source = `<source type="image/webp" srcset="${srcset["webp"]}" >`;
+
+    const img = `<img
+      loading="lazy"
+      alt="${alt}"
+      src="${lowestSrc.url}"
+      sizes='(min-width: 1024px) 1024px, 100vw'
+      srcset="${srcset["jpeg"]}"
+      width="${lowestSrc.width}"
+      height="${lowestSrc.height}">`;
+
+    return `<div class="image-wrapper"><picture> ${source} ${img} </picture></div>`;
+  });
+
     eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addPlugin(pluginRss);
     eleventyConfig.addPlugin(pluginRss, {
@@ -14,8 +54,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLiquidFilter("dateToRfc3339", pluginRss.dateToRfc3339);
     eleventyConfig.addPlugin(pluginNavigation);
     eleventyConfig.addPassthroughCopy("./src/css");
+    eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.setBrowserSyncConfig({
-      files: './_site/css/**/*.css'
+      files: './public/css/**/*.css'
     });
     eleventyConfig.addWatchTarget("./src/css/");
 

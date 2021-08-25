@@ -17,7 +17,7 @@ tags:
 - ~~Post card in 11ty~~
 - ~~Adding ReadMe in Github with one step deploy button in Netlify and Vercel~~
 - ~~Fixing `posts` view in mobile~~
-- Adding `About Me` section
+- ~~Adding `About Me` section~~
 - Adding images and excerpt in post cards.
 - Featured post in 11ty
 - Add a sitemap

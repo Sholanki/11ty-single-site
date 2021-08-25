@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
   key: Upcoming features
-  order: 3
+  order: 4
 date: 2020-09-09T11:18:34.000-07:00
 title: 'Upcoming tweaks in this site'
 description: Upcoming tweaks in website
@@ -20,7 +20,7 @@ tags:
 - ~~Post card in 11ty~~
 - ~~Adding ReadMe in Github with one step deploy button in Netlify and Vercel~~
 - ~~Fixing `posts` view in mobile~~
-- Adding `About Me` section
+- ~~Adding `About Me` section~~
 - Adding images and excerpt in post cards.
 - Featured post in 11ty
 - Add a sitemap

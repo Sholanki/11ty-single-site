@@ -20,5 +20,7 @@ The tools and links that I found useful while making this site:
 - [11ty navigation](https://www.11ty.dev/docs/plugins/navigation/)
 - [CSS grids](https://learncssgrid.com/)
 - [Making post cards pop](https://dev.to/jonoyeong/how-to-make-your-cards-pop-10ok)
+- [Optimising images](https://mahmoudashraf.dev/blog/how-to-optimize-and-lazyloading-images-on-eleventy/)
+- [Image plugin and how to use it](https://www.11ty.dev/docs/plugins/image/)
 
 *Note*: The list will be continuously updated with the links and tools that I find useful while making this site. 
