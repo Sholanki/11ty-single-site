@@ -2,6 +2,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const Image = require("@11ty/eleventy-img");
+const striptags = require("striptags");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("Image", async (src, alt) => {
@@ -54,6 +55,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLiquidFilter("dateToRfc3339", pluginRss.dateToRfc3339);
     eleventyConfig.addPlugin(pluginNavigation);
     eleventyConfig.addPassthroughCopy("./src/css");
+    eleventyConfig.addShortcode("excerpt", (article) => extractExcerpt(article));
     eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.setBrowserSyncConfig({
       files: './public/css/**/*.css'
@@ -133,4 +135,24 @@ module.exports = function (eleventyConfig) {
         output: "public",
       },
     };
+  };
+
+  function extractExcerpt(article) {
+    if (!article.hasOwnProperty("templateContent")) {
+      console.warn(
+        'Failed to extract excerpt: Document has no property "templateContent".'
+      );
+      return null;
+    }
+  
+    let excerpt = null;
+    const content = article.templateContent;
+  
+    excerpt = striptags(content)
+      .substring(0, 250) // Cap at 250 characters
+      .replace(/^\s+|\s+$|\s+(?=\s)/g, "")
+      .trim()
+      .concat("...");
+  
+    return excerpt;
   };

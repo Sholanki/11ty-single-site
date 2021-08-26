@@ -26,9 +26,11 @@
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-navigation": "^0.3.2",
     "clean-css": "^5.1.5",
+    "gray-matter": "^4.0.3",
     "node-sass": "^6.0.1",
     "node-sass-promise": "^1.0.0",
-    "sass": "^1.38.0"
+    "sass": "^1.38.0",
+    "striptags": "^3.2.0"
   },
   "devDependencies": {
     "@11ty/eleventy-img": "^0.10.0",
