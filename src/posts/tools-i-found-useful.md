@@ -24,5 +24,8 @@ The tools and links that I found useful while making this site:
 - [Image plugin and how to use it](https://www.11ty.dev/docs/plugins/image/)
 - [Embedding tweets](https://www.npmjs.com/package/eleventy-plugin-embed-twitter)
 - [Adding comments using utterances](https://dev.to/antopiras89/add-comments-to-your-static-blog-with-utterances-3jao)
+- [Google Analytics in 11ty](https://jec.fyi/blog/setting-up-seo-and-google-analytics)
+- [Brief: Adding sitemap to eleventy](https://11ty.recipes/recipes/add-a-sitemap/)
+- [Detailed: Adding sitemap to 11ty](https://www.belter.io/eleventy-sitemap/)
 
 *Note*: The list will be continuously updated with the links and tools that I find useful while making this site. 
