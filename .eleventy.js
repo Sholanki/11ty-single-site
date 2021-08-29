@@ -3,6 +3,7 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const Image = require("@11ty/eleventy-img");
 const striptags = require("striptags");
+const embedTwitter = require("eleventy-plugin-embed-twitter");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("Image", async (src, alt) => {
@@ -54,6 +55,7 @@ module.exports = function (eleventyConfig) {
   
   eleventyConfig.addLiquidFilter("dateToRfc3339", pluginRss.dateToRfc3339);
     eleventyConfig.addPlugin(pluginNavigation);
+    eleventyConfig.addPlugin(embedTwitter);
     eleventyConfig.addPassthroughCopy("./src/css");
     eleventyConfig.addShortcode("excerpt", (article) => extractExcerpt(article));
     eleventyConfig.addPassthroughCopy("images");

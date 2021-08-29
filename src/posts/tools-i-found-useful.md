@@ -22,5 +22,7 @@ The tools and links that I found useful while making this site:
 - [Making post cards pop](https://dev.to/jonoyeong/how-to-make-your-cards-pop-10ok)
 - [Optimising images](https://mahmoudashraf.dev/blog/how-to-optimize-and-lazyloading-images-on-eleventy/)
 - [Image plugin and how to use it](https://www.11ty.dev/docs/plugins/image/)
+- [Embedding tweets](https://www.npmjs.com/package/eleventy-plugin-embed-twitter)
+- [Adding comments using utterances](https://dev.to/antopiras89/add-comments-to-your-static-blog-with-utterances-3jao)
 
 *Note*: The list will be continuously updated with the links and tools that I find useful while making this site. 
