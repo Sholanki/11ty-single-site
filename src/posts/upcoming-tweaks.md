@@ -18,12 +18,12 @@ tags:
 - ~~Adding ReadMe in Github with one step deploy button in Netlify and Vercel~~
 - ~~Fixing `posts` view in mobile~~
 - ~~Adding `About Me` section~~
-- Embedding tweets
+- ~~Embedding tweets~~
 - Adding images and excerpt in post cards.
 - 11ty Twitter cards
-- Commenting on posts in 11ty through utterances
+- ~~Commenting on posts in 11ty through utterances~~
 - Featured post in 11ty
-- Add a sitemap
+- ~~Add a sitemap~~
 - A tutorial on 11ty! This is going to be a work in progress. 
 
 

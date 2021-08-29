@@ -1,5 +1,5 @@
 module.exports = {
     tracking: {
-      gtag: 'your_tracking_id',
+      gtag: 'G-GDVBL4Z373',
     },
   };
