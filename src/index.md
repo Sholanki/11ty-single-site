@@ -11,5 +11,5 @@ layout: base.njk
 
 ### So, let me give you an overlay of this website. 
 1. In `posts` section, you will find all the posts which document on how to install plugins or add new features in eleventy. It includes the post, the site references that I have used and the errors that I have stumbled upon and how it has been resolved or is the issue still there.
-2. Here's a hack. In the post [Tools I found useful](https://shobiz-eleventy-site.netlify.app/tools-i-found-useful/), all the links that I have used are mentioned in no specific order.
+2. Here's a hack. In the post ['Tools I found useful'](https://shobiz-eleventy-site.netlify.app/tools-i-found-useful/), all the links that I have used are mentioned in no specific order.
 3. The section `About Me` is basic introduction myself of what I am doing currently.
