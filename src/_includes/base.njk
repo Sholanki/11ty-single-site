@@ -12,6 +12,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <base href="/">
         <link rel="stylesheet" href="/css/styles.css" />
+        <!-- add these code in the head section -->
+        <script async 
+            src="https://www.googletagmanager.com/gtag/js?id=G-GDVBL4Z373">
+        </script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+            dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-GDVBL4Z373');
+        </script>
     </head>
     <body>
         {% include "color-switcher.html" %}
