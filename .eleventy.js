@@ -6,6 +6,7 @@ const striptags = require("striptags");
 const embedTwitter = require("eleventy-plugin-embed-twitter");
 
 module.exports = function (eleventyConfig) {
+  
   eleventyConfig.addNunjucksAsyncShortcode("Image", async (src, alt) => {
     if (!alt) {
       throw new Error(`Missing \`alt\` on myImage from: ${src}`);
@@ -66,6 +67,12 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addFilter("readableDate", dateObj => {
       return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
+    });
+
+    eleventyConfig.addFilter("jsonTitle", (str) => {
+      let title = str.replace(/((.*)\s(.*)\s(.*))$/g, "$2&nbsp;$3&nbsp;$4");
+      title = title.replace(/"(.*)"/g, '\\"$1\\"');
+      return title;
     });
 
     eleventyConfig.addFilter('htmlDateString', (dateObj) => {
