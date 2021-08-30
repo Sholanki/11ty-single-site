@@ -6,5 +6,5 @@ permalinkBypassOutputDir: true
     {
    "title":"{{post.data.title | jsonTitle}}",
    "slug":"{{post.data.title | slug}}}"
-    }{% if forloop.last == false %},{% endif %}
+    },{% if forloop.last == false %},{% endif %}
 {% endfor %}] 
