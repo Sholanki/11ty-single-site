@@ -33,6 +33,11 @@ body {
   }
 }
 
+.content {
+  height: 750px;
+  overflow: auto;
+}
+
 time {
   display: block;
   color: $ming;
